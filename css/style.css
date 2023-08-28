@@ -26,3 +26,9 @@ body {
 .shadow {
     filter: drop-shadow(4px 4px 4px rgb(243, 183, 183));
 }
+
+.border
+{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightblue;
+}
