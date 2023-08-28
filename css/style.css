@@ -1,10 +1,28 @@
 body {
-    font-family :Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.grad 
-{
+.grad {
     background-image: linear-gradient(rgb(255, 255, 255), rgb(128, 128, 128));
 }
 
+.partial-sepia {
+    filter: sepia(50%);
+}
 
+
+.transparent {
+    filter: opacity(30%);
+}
+
+.complete-transparent {
+    filter: opacity(90%);
+}
+
+.complete-sepia {
+    filter: sepia(100%);
+}
+
+.shadow {
+    filter: drop-shadow(4px 4px 4px rgb(243, 183, 183));
+}
