@@ -1,0 +1,10 @@
+body {
+    font-family :Georgia, 'Times New Roman', Times, serif
+}
+
+.grad 
+{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(128, 128, 128));
+}
+
+
