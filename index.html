@@ -16,7 +16,7 @@
       rel="stylesheet">
 </head>
 
-<body class="m-2 grad">
+<body class="m-2 grad" onload="openInstructions()">
   <!-- navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary my-2">
     <div class="container-fluid">
@@ -47,7 +47,10 @@
             <a class="nav-link text-light" href="./contact.html">Contact Us</a>
           </li>
         </ul>
-        <button type="button" class="btn btn-danger">SUBSCRIBE</button>
+        
+        <button type="button" class="btn btn-success mx-2" onclick="openPortal()">ONLINE EXAM</button>
+        <button type="button" class="btn btn-danger mx-2" onclick="subscribe()">SUBSCRIBE</button>
+     
       </div>
     </div>
   </nav>
