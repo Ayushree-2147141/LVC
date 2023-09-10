@@ -63,3 +63,82 @@ function generateResult()
 
     }
 }
+
+function openInstructions()
+{
+    window.open("./instructions.html", width="50%", height="30%");
+}
+
+function openPortal()
+{
+    window.open('./onlineexam.html', width="50%", height="50%");
+}
+
+function generateOnlineResult()
+{
+    var total = 0;
+    if(document.getElementById('option11').checked && document.getElementById('option22').checked)
+    {
+        total = 4
+    }
+    else if(document.getElementById('option11').checked || document.getElementById('option22').checked)
+    {
+        total = 2;
+    }
+    else
+    {
+        total = 0
+    }
+    alert("Marks awarded : "+total);
+   
+}
+
+
+function subscribe()
+{
+    // prompt('Enter your email id to subscribe!');
+    prompt('Enter your name!');
+    var country = prompt('Enter your country!');
+    if (country == "India" || country == 'india')
+    {
+        window.open('./discount.html', width = "50%", height = "50%");
+    }
+    else
+    {
+        alert('oops! no dicount for you!');
+    }
+}
+
+function formsubmit()
+{
+    var username = form1.username.value;
+    var userEmail = form1.useremail.value;
+    var designation = form1.userdesignation.value;
+
+    if (username == "")
+    {
+        alert("Please enter your name!");
+        form1.username.focus();
+        return false;
+    }
+    else if(userEmail == "")
+    {
+        alert("Please enter your email");
+        form1.useremail.focus();
+        return false;
+
+    }
+    else if(designation == "")
+    {
+        alert("Please enter your designation")
+        form1.designation.focus();
+        return false;
+    }
+    
+    else
+    {
+        alert("Lets go " + username)
+        return true;
+    }
+
+}
