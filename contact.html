@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link  text-light" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="./courses.html">All Courses</a>
@@ -44,10 +44,13 @@
             <a class="nav-link text-light" href="./result.html">LVC Result</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="./contact.html">Contact Us</a>
+            <a class="nav-link active text-light" href="./contact.html">Contact Us</a>
           </li>
         </ul>
-        <button type="button" class="btn btn-danger">SUBSCRIBE</button>
+        
+        <button type="button" class="btn btn-success mx-2" onclick="openPortal()">ONLINE EXAM</button>
+        <button type="button" class="btn btn-danger mx-2" onclick="subscribe()">SUBSCRIBE</button>
+     
       </div>
     </div>
   </nav>
@@ -81,7 +84,7 @@
     <div class="row mt-2 d-flex align-items-center">
         <div class="col-sm-6 mb-2 card p-2 ">
             <h3 class="d-flex justify-content-center">Contact us</h3>
-            <form>
+            <form method="get" action="./thanks.html" onsubmit="return formsubmit()" name="form1">
                 <div class="mb-3">
                     <label for="username" class="form-label">Name </label>
                     <input type="text" class="form-control" id="username">
